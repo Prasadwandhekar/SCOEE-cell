@@ -1,0 +1,132 @@
+/* Add basic styling */
+.about {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-direction: row;
+    padding: 40px;
+    gap: 10px;
+  }
+  
+  .image-containe {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the image stays within its container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: box-shadow 0.3s ease; /* Add transition for shadow effect */
+    object-fit: cover;
+  
+  }
+  
+  .image-containe:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add hover effect */
+  }
+  
+  .image-containe img {
+    max-width: 100%;
+    transition: transform 0.3s ease; /* Add transition for image scale effect */
+  }
+  
+  .image-containe:hover img {
+    transform: scale(1.05); /* Add hover effect to scale image */
+  }
+  
+  .text-containe {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .heading {
+    color: goldenrod;
+    margin-bottom: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  .description {
+    font-size: 20px;
+    font-weight: 450;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    .image-container {
+      max-width: 80%; /* Limit image width for smaller screens */
+      object-fit: cover;
+
+    }
+  }
+  
+
+  /* Add basic styling */
+.vision {
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 20px;
+   
+    
+}
+
+.header {
+    color: goldenrod;
+    margin-bottom: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+.message {
+    text-align: center;
+    align-items: center;
+    font-size: 14px; /* Adjust font size as needed */
+    font-weight: 300;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add responsiveness for smaller screens */
+@media only screen and (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center; /* Center align content */
+  }
+
+  .text-container {
+    margin-left: 0; /* Remove margin */
+  }
+
+  .heading {
+    font-size: 25px; /* Decrease font size for smaller devices */
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 500; /* Decrease font size for smaller devices */
+  }
+  .message{
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .city svg {
+    font-size: 1.5rem; /* Adjust icon size for mobile */
+  }
+ 
+}
+/* Add hover effect */
+
+
+/* Add animation effect */
+.vision {
+    transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+
+.spot{
+    color: goldenrod;
+    margin-bottom: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    margin-top: 40px;
+}

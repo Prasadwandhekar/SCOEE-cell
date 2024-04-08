@@ -1,0 +1,221 @@
+/* ContactUs.css */
+
+.contact-us-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCmVq8uttfZv6xmGSPTKGX_Itwz4cmXNK02w&s');
+    background-size: cover;
+    background-position: center;
+    opacity: 1.1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Text color */
+}
+
+.header {
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-bottom: 10px; /* Decrease margin to ensure header stays in one line */
+}
+
+.message {
+    font-size: 24px; 
+    font-weight: 450; 
+    max-width: 80%; /* Limit message width for responsiveness */
+    margin: 0 auto; /* Center message horizontally */
+}
+
+/* ContactPage.css */
+
+.contact-page {
+    text-align: center;
+}
+
+h2 {
+    color: goldenrod;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.first-row {
+    display: flex;
+    justify-content: center;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-member {
+    width: calc(33.33% - 20px);
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(70, 67, 67);
+    margin-bottom: 40px;
+    border-radius: 20px;
+    box-shadow: 10 10px 10px rgba(21, 20, 20, 0.2);
+}
+
+
+
+.member-info {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.member-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease; 
+}
+
+.member-info:hover .member-image {
+    transform: translateX(-50%) scale(1.1); 
+}
+.member-info:hover  {
+    transform:  scale(1); 
+}
+.team-member:hover{
+    transform:  scale(1.1); 
+}
+
+
+.member-details {
+    margin-top: 60px;
+    color:rgb(182, 141, 65);
+    transform:  scale(1); 
+}
+.member-details p {
+    color: white; /* Set position text color to white */
+    transform:  scale(1); 
+
+}
+
+.member-links {
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: large;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.member-links a {
+    margin: 0 10px;
+    color:rgb(182, 141, 65); 
+    font-size: 20px; 
+    border: 1px solid rgb(182, 141, 65); 
+    border-radius: 50%;
+    padding: 8px; 
+    transition: transform 0.3s, border-color 0.3s; 
+}
+
+.member-links a:hover {
+    transform: scale(1.1); 
+    border-color: goldenrod; 
+}
+
+
+/* contact info */
+
+.contact-form-container {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}
+
+
+.contact-form-container h2 {
+    color: goldenrod;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(206, 143, 27);
+    padding: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .b{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+  }
+  
+/* Add responsiveness for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+    }
+    
+}

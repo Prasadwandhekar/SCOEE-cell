@@ -1,0 +1,70 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 20px; /* Adjust the gap between items */
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .ecell-moments-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.ecell-moments-title {
+    color: #fbbf24;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.ecell-moments-description {
+    font-size: 0.875rem; /* Smaller than base */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+  
+  .gallery-item {
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius for image corners */
+    box-shadow: 4 6px 6px rgba(195, 20, 20, 0.2);
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust columns for smaller screens */
+      grid-gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+  }
+  
+  .gallery-item.enlarge {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    max-width: 90%;
+    max-height: 90%;
+    cursor: zoom-out;
+  }
+  
+  .gallery-item.enlarge img {
+    max-width: 100%;
+    max-height: 100%;
+  }

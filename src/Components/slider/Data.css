@@ -1,0 +1,156 @@
+/* Testimonials.css */
+.speakeres {
+    text-align: center; /* Center align content */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .speakeres h2 {
+    color: rgb(206, 143, 27); /* Golden color */
+    margin-bottom: 20px; /* Add margin at the bottom */
+  }
+  
+  .speakeres p {
+    color: #251d1d; /* Adjust text color */
+    font-size: large;
+    font-weight: 400;
+    margin-bottom: 20px; /* Add margin at the bottom */
+
+  }
+  
+  .testimonials-container {
+    position: relative; /* Make the container relative to position its children */
+ 
+  }
+  
+  .testimonial-item {
+    position: relative; /* Ensure relative positioning for absolute positioning of middle item */
+    background-color:rgb(66, 64, 57);
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  
+  .testimonial-item img {
+    width: 80%;
+    border-radius: 10px; /* Add border radius to the image */
+  }
+  
+  .testimonial-item h3 {
+    margin-top: 10px; /* Add some margin to the top of the name */
+  }
+  
+  .testimonial-item p {
+    margin-top: 5px; /* Add some margin to the top of the review */
+  }
+  
+  /* Style the absolute positioned middle item */
+  .testimonial-item.absolute-middle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* Ensure middle item is on top */
+  }
+  
+  /* Adjust z-index and position for items on the sides */
+  .testimonial-item:nth-child(2),
+  .testimonial-item:nth-child(3),
+  .testimonial-item:nth-child(4),
+  .testimonial-item:nth-child(5) {
+    z-index: 1; /* Make items behind the middle item */
+  }
+  
+  /* Adjust the position of items on the sides */
+  .testimonial-item:nth-child(2) {
+    left: calc(50% - 20%);
+  }
+  
+  .testimonial-item:nth-child(3) {
+    left: calc(50% - 40%);
+  }
+  
+  .testimonial-item:nth-child(4) {
+    right: calc(50% - 40%);
+  }
+  
+  .testimonial-item:nth-child(5) {
+    right: calc(50% - 20%);
+  }
+  
+  .testimonial-item:hover {
+    transform: scale(1.1); /* Scale up the name on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add hover effect */
+    border-radius: 20px;
+  }
+ 
+
+.testimonial-item:hover h3 {
+    transform: scale(1.1); /* Scale up the name on hover */
+}
+
+
+
+  .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; /* Align images to center */
+    gap: 20px;
+  }
+  
+  .testimonial-item h3 {
+    font-size: 18px;
+    color:rgb(206, 143, 27);
+  }
+  
+  .testimonial-item p {
+    font-size: 14px;
+    color:white;
+  }
+  .slick-arrow {
+    z-index: 1; /* Ensure the arrow buttons are visible */
+  }
+  
+/* Customize arrow buttons */
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background-color: gray; /* Change the color of the arrow buttons */
+  border-radius: 50%;
+  gap: 30px;
+}
+  
+  @media screen and (max-width: 768px) {
+    .testimonials-container {
+      width: 90%; /* Adjust width for smaller devices */
+      margin-left: 20px;
+    }
+  
+    .testimonial-item {
+      padding: 20px; /* Adjust padding for smaller devices */
+      border-radius: 20px;
+    }
+    
+  }
+  
+  /* Add more media queries as needed for further responsiveness */
+  /* CSS for mobile devices */
+@media screen and (max-width: 768px) {
+  .testimonial-slider {
+    .slick-slide {
+      width: 100%;
+    }
+  }
+}
+
+/* CSS for tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .testimonial-slider {
+    .slick-slide {
+      width: 50%;
+    }
+  }
+}

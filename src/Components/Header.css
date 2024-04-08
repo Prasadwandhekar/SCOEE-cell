@@ -1,0 +1,188 @@
+.active {
+    background-color: #1d4ed8;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: goldenrod;
+    transition: background-color 0.3s ease; /* Add transition for smoother color change */
+  }
+ul li a svg:hover{
+    color: goldenrod;
+}
+
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(60, 58, 58);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Set a high z-index to ensure the navbar appears above other content */
+}
+
+
+nav .title{
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+/* styles.css */
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+  .logo img {
+    border-radius: 50px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: -5px;
+  }
+  
+  .text-container h6 {
+    margin: 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: goldenrod;
+    list-style: none;
+    font-weight: 600;
+  }
+  
+  .text-container p {
+    margin: 0;
+    margin-left: 12px;
+    font-size: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .menu-item {
+    display: flex;
+   flex-direction:row;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+
+  }
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    transition: background-color 0.3s ease; 
+}
+.navlink{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+ul li a svg {
+    margin-right: 5px; /* Add some spacing between icon and text */
+    font-size: 1.2em; /* Increase the size of the icons */
+   padding-top: 5px;
+   transition: background-color 0.3s ease; 
+}
+  
+
+nav ul li a:not(.active):hover{
+    background-color: #172554;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* Add transition for smoother color change */
+
+}
+
+nav .menu{
+    display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+    nav .menu {
+    display: flex;
+    }
+
+    nav{
+
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+   
+    .logo {
+      margin-right: 10px;
+      border-radius: 20px;
+      margin-left: 5px;
+    }
+    .logo img {
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+    }
+    
+     
+
+
+    
+}
